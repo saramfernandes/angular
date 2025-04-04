@@ -1,0 +1,11 @@
+<div class="container mt-5">
+    <h3>Cálculo IMC</h3>
+    <label class="form-label">Peso: </label>
+    <input type="number" class="form-control" [(ngModel)]="peso" name="peso">
+    <p class="mt-3">{{peso}}</p>
+    <label class="form-label">Altura: </label>
+    <input type="number" class="form-control" [(ngModel)]="altura" name="altura">
+    <p class="mt-3">{{altura}}</p>
+    <button class="btn btn-secondary m-2" (click)="calcularIMC()">Calcular IMC</button>
+    <p class="mt-3">{{resultado}}</p>
+</div>
