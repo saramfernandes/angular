@@ -1,1 +1,9 @@
-<p>diretiva-ng-if works!</p>
+<h1>Exemplo ngIf</h1>
+
+<button class="btn btn-primary mr-3" (click)="clickAmarelo()">Amarelo</button>
+<button class="btn btn-primary mr-3" (click)="clickVermelho()">Vermelho</button>
+
+<div class="containerPai">
+    <div *ngIf="containerAmarelo" class="divAmarelo"></div>
+    <div *ngIf="containerVermelho" class="divVermelho"></div>
+</div>

@@ -1,1 +1,12 @@
-<p>diretiva-ng-switch works!</p>
+<h1>Ezemplo ngSwitch</h1>
+<input type="number"[(ngModel)]="valor">
+<div [ngSwitch]="valor">
+    <p *ngSwitchCase="1"> Domingo</p>
+    <p *ngSwitchCase="2"> Segunda</p>
+    <p *ngSwitchCase="3"> Terça</p>
+    <p *ngSwitchCase="4"> Quarta</p>
+    <p *ngSwitchCase="5"> Quinta</p>
+    <p *ngSwitchCase="6"> Sexta</p>
+    <p *ngSwitchCase="7"> Sábado</p>
+    <p *ngSwitchDefault> Não representa um dia de semana</p>
+</div>

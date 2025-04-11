@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-diretiva-ng-class',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './diretiva-ng-class.component.html',
   styleUrl: './diretiva-ng-class.component.scss'
 })
-export class DiretivaNgClassComponent {
+export class DiretivaNgClassComponent implements OnInit{
+  public valor: boolean = true;
 
+  ngOnInit(): void {
+      setInterval(() => {
+        this.valor = !this.valor;
+      }, 1500);
+  }
 }

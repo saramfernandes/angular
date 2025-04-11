@@ -10,6 +10,7 @@ import { DiretivaNgModelComponent } from './diretiva-ng-model/diretiva-ng-model.
 import { DiretivaNgIfComponent } from './diretiva-ng-if/diretiva-ng-if.component';
 import { DiretivaNgForComponent } from './diretiva-ng-for/diretiva-ng-for.component';
 import { DiretivaNgClassComponent } from './diretiva-ng-class/diretiva-ng-class.component';
+import { GaleriaComponent } from './galeria/galeria.component';
 
 export const routes: Routes = [
     {
@@ -55,5 +56,9 @@ export const routes: Routes = [
     {
         path: 'class',
         component: DiretivaNgClassComponent
+    },
+    {
+        path: 'galeria',
+        component: GaleriaComponent
     }
 ];
