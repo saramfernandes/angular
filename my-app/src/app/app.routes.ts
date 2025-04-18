@@ -11,6 +11,8 @@ import { DiretivaNgIfComponent } from './diretiva-ng-if/diretiva-ng-if.component
 import { DiretivaNgForComponent } from './diretiva-ng-for/diretiva-ng-for.component';
 import { DiretivaNgClassComponent } from './diretiva-ng-class/diretiva-ng-class.component';
 import { GaleriaComponent } from './galeria/galeria.component';
+import { CpPaiComponent } from './modulo-teste/cp-pai/cp-pai.component';
+import { CpPaiComponent as CpPaiComponent2 } from './modulo-teste-2/cp-pai/cp-pai.component';
 
 export const routes: Routes = [
     {
@@ -60,5 +62,13 @@ export const routes: Routes = [
     {
         path: 'galeria',
         component: GaleriaComponent
+    },
+    {
+        path: 'pai-filho',
+        component: CpPaiComponent
+    },
+    {
+        path: 'filho-pai',
+        component: CpPaiComponent2
     }
 ];
