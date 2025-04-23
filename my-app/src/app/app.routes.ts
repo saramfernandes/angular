@@ -13,6 +13,7 @@ import { DiretivaNgClassComponent } from './diretiva-ng-class/diretiva-ng-class.
 import { GaleriaComponent } from './galeria/galeria.component';
 import { CpPaiComponent } from './modulo-teste/cp-pai/cp-pai.component';
 import { CpPaiComponent as CpPaiComponent2 } from './modulo-teste-2/cp-pai/cp-pai.component';
+import { CpAgrupadorComponent } from './md-service/cp-agrupador/cp-agrupador.component';
 
 export const routes: Routes = [
     {
@@ -70,5 +71,10 @@ export const routes: Routes = [
     {
         path: 'filho-pai',
         component: CpPaiComponent2
+    },
+    {
+        path: 'agrupador',
+        component:CpAgrupadorComponent
     }
+
 ];

@@ -1,6 +1,6 @@
 <h3>Pipe para data</h3>
 <p>SEM: {{data}}</p>
-<p>COM: {{data | date: 'dd-MM-yyyy'}}</p>
+<p>COM: {{data | date:'dd-MM-yyyy'}}</p>
 <hr>
 
 <h3>Pipe para Texto</h3>
@@ -15,6 +15,6 @@
 <hr>
 
 <h3>Pipe própria (inverter uma string)</h3>
-<p>Criar a pipe <b> <i>'ng generate pipe inverte' </i></b></p>
+<p>Criar a pipe <b><i>'ng generate pipe primeira' </i></b></p>
 <input type="text" [(ngModel)]="palavra">
 {{palavra | primeira}}
