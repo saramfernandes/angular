@@ -14,6 +14,7 @@ import { GaleriaComponent } from './galeria/galeria.component';
 import { CpPaiComponent } from './modulo-teste/cp-pai/cp-pai.component';
 import { CpPaiComponent as CpPaiComponent2 } from './modulo-teste-2/cp-pai/cp-pai.component';
 import { CpAgrupadorComponent } from './md-service/cp-agrupador/cp-agrupador.component';
+import { TesteJsonPlaceholderComponent } from './exemplo-http/teste-json-placeholder/teste-json-placeholder.component';
 
 export const routes: Routes = [
     {
@@ -75,6 +76,9 @@ export const routes: Routes = [
     {
         path: 'agrupador',
         component:CpAgrupadorComponent
+    },
+    {
+        path: 'exemplo-http', 
+        component: TesteJsonPlaceholderComponent
     }
-
 ];
